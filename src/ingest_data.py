@@ -53,3 +53,6 @@ hourly_data["wind_speed_10m"] = hourly_wind_speed_10m
 
 hourly_dataframe = pd.DataFrame(data = hourly_data)
 print("\nHourly data\n", hourly_dataframe)
+hourly_dataframe.to_csv("data/raw/weather_data.csv", index=False)
+
+print("Data saved successfully!")
